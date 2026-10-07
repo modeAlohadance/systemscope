@@ -1,5 +1,6 @@
 #pragma once
 #define NOMINMAX
+#include <windows.h>
 #include <algorithm>
 #include <commctrl.h>
 #include <commdlg.h>
@@ -10,7 +11,6 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
-#include <windows.h>
 inline std::string utf8(const std::wstring &s) {
     if (s.empty())
         return {};
